@@ -1,0 +1,2 @@
+I am making a simple version of grep to enforce what I have learnt on Rust so far, and to get a sensing on real-world projects
+The inspiration comes from the more comprehensive version of grep has already been created by Andrew Gallant, called ripgrep. 
