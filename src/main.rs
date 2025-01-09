@@ -1,4 +1,5 @@
 use std::env;
+use std::fs;
 
 fn main() {
     // Converts iterator of args inro a collection (Vector)
@@ -10,4 +11,9 @@ fn main() {
 
     println!("Searching for {query}");
     println!("In file {file_path}");
+
+    let contents = fs::read_to_string(file_path)
+        .expect("Error reading file path");
+
+    println!("With text:\n{contents}");
 }
